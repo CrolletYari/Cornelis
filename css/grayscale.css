@@ -156,13 +156,15 @@ a:focus {
 .btn-circle {
   width: 70px;
   height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    z-index: 2;
+    position: relative;
   border: 2px solid white;
   border-radius: 100% !important;
   font-size: 40px;
   color: white;
-  background: transparent;
+  background: transparant;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
