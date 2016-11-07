@@ -1,0 +1,20 @@
+
+
+/** voor de images van realisaties **/
+
+#imgContainer {
+    
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    width: 100%;
+    overflow: auto;
+}
+
+figure {
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
