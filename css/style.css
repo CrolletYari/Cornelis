@@ -5,18 +5,55 @@
 
 #imgContainer {
     
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
     
 
 }
 
 figure {
+ 
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-basis: 50%;
+    margin: 10px 0px;
     
-    display: inline-block;
-    width: 35%;
+}
+
+img {
     
+    display: block;
+    margin: auto;
+    
+}
+
+.test {
+
+    
+}
+.imgWrap {
+    
+    position: relative; 
+    width: 100%; 
+    
+}
+
+.imgDescription {
+    
+    top:50px;
+    left:250px;
+    position: absolute;
+    background-color: black;
+    
+    visibility: hidden;
+    
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
 }
