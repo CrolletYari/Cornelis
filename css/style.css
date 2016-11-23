@@ -23,28 +23,17 @@ figure {
     
 }
 
-img {
-    
-    display: block;
-    margin: auto;
-    
-}
-
-.test {
-
-    
-}
 .imgWrap {
     
     position: relative; 
-    width: 100%; 
     
 }
 
+
 .imgDescription {
     
-    top:50px;
-    left:250px;
+    top:40%;
+    left:45%;
     position: absolute;
     background-color: black;
     
@@ -53,7 +42,26 @@ img {
 }
 
 
+
+
 .imgWrap:hover .imgDescription {
   visibility: visible;
   opacity: 1;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-45deg);
+
+/* Firefox */
+-moz-transform: rotate(-45deg);
+
+/* IE */
+-ms-transform: rotate(-45deg);
+
+/* Opera */
+-o-transform: rotate(-45deg);
+
+
 }
