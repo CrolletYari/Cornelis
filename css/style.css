@@ -1,59 +1,41 @@
-
-
 /** voor de images van realisaties **/
 
-
 #imgContainer {
-    
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    
-
 }
 
 figure {
- 
     flex-grow: 1;
     flex-basis: 50%;
     margin: 10px 0px;
-    
 }
 
 img {
-    
     display: block;
     margin: auto;
-    
 }
 
-.test {
+.test {}
 
-    
-}
 .imgWrap {
-    
-    position: relative; 
-    width: 100%; 
-    
+    position: relative;
+    width: 100%;
 }
 
 .imgDescription {
-    
-    top:50px;
-    left:250px;
+    top: 50px;
+    left: 250px;
     position: absolute;
     background-color: black;
-    
     visibility: hidden;
-    
 }
 
-
 .imgWrap:hover .imgDescription {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
