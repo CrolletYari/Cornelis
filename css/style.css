@@ -15,41 +15,30 @@ figure {
     margin: 10px 0px;
 }
 
-<<<<<<< HEAD
-.imgWrap {
     
-    position: relative; 
-    
-=======
-img {
+    img {
     display: block;
     margin: auto;
 }
 
-.test {}
 
 .imgWrap {
     position: relative;
     width: 100%;
->>>>>>> ae05b3677467f3ee5159c88e415540b722f1591e
 }
 
 
 .imgDescription {
-<<<<<<< HEAD
     
     top:40%;
     left:45%;
-=======
     top: 50px;
     left: 250px;
->>>>>>> ae05b3677467f3ee5159c88e415540b722f1591e
     position: absolute;
     background-color: black;
     visibility: hidden;
 }
 
-<<<<<<< HEAD
 
 
 
@@ -71,11 +60,9 @@ img {
 
 /* Opera */
 -o-transform: rotate(-45deg);
-
-
-=======
+}
+    
 .imgWrap:hover .imgDescription {
     visibility: visible;
     opacity: 1;
->>>>>>> ae05b3677467f3ee5159c88e415540b722f1591e
 }
