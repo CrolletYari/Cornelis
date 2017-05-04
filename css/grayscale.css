@@ -15,6 +15,10 @@ html {
   height: 100%;
 }
 
+small i{
+    color: #007399;
+}
+
 .navbar-brand img{
     width: 90%;
 }
@@ -43,7 +47,7 @@ p {
   }
 }
 a {
-  color: #03475B;
+  color: #007399;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -88,6 +92,13 @@ a:focus {
     height: 80px;
     display: table-cell;
     vertical-align: middle;
+}
+
+hr{
+    background-color: #007399;
+    width: 95%;
+    height: 1px;
+    border-color: #007399;
 }
 
 .top-nav-collapse a {
@@ -241,16 +252,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #03475B;
-  color: #03475B;
+  border: 1px solid #007399;
+  color: #007399;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #03475B;
+  border: 1px solid #007399;
   outline: none;
   color: white;
-  background-color: #03475B;
+  background-color: #007399;
 }
 ul.banner-social-buttons {
   margin-top: 0;
