@@ -1,0 +1,68 @@
+/** voor de images van realisaties **/
+
+#imgContainer {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+figure {
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin: 10px 0px;
+}
+
+    
+    img {
+    display: block;
+    margin: auto;
+}
+
+
+.imgWrap {
+    position: relative;
+    width: 100%;
+}
+
+
+.imgDescription {
+    
+    top:40%;
+    left:45%;
+    top: 50px;
+    left: 250px;
+    position: absolute;
+    background-color: black;
+    visibility: hidden;
+}
+
+
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-45deg);
+
+/* Firefox */
+-moz-transform: rotate(-45deg);
+
+/* IE */
+-ms-transform: rotate(-45deg);
+
+/* Opera */
+-o-transform: rotate(-45deg);
+}
+    
+.imgWrap:hover .imgDescription {
+    visibility: visible;
+    opacity: 1;
+}
