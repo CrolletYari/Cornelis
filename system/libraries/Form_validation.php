@@ -350,7 +350,7 @@ class CI_Form_validation {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Get Array of Error Messages
+	 * Get Array of Error MessagesInmemory
 	 *
 	 * Returns the error messages as an array
 	 *
