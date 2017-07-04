@@ -2,12 +2,16 @@
 
 class Message extends CI_Model {
     
-    var $id = 0;
-    var $message = "";
+    var $id;
+    var $title;
+    var $message;
+    var $date;
     
     function __construct() {
-        $this->set_id(1);
-        $this->set_message("test");
+        $this->set_id(0);
+        $this->set_title("");
+        $this->set_message("");
+        $this->set_date();
     }
     
     
@@ -18,6 +22,15 @@ class Message extends CI_Model {
     function get_id() {
         return $this->id;
     }
+
+    public function set_title($new_title) {
+        $this->title = $new_title;
+
+    }
+
+    public function get_title() {
+        return $this->title;
+    }
     
     function set_message($new_message) {
         $this->message = $new_message;
@@ -26,9 +39,14 @@ class Message extends CI_Model {
     function get_message() {
         return $this->message;
     }
-    
-    
-    
-    
+
+    public function set_date() {
+        $this->date = date("Y-m-d H:i:s");
+    }
+
+    public function get_date() {
+        return $this->date;
+    }
+
     
 }

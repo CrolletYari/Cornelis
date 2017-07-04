@@ -11,7 +11,7 @@ class MessagesInDB extends CI_Model implements MessagesInterface
 
     public function __construct()
     {
-        $this->load->database();
+
         $this->load->model('message');
     }
 
@@ -22,12 +22,18 @@ class MessagesInDB extends CI_Model implements MessagesInterface
 
     public function addMessage($message)
     {
+        $title = $message->get_title();
+        $text = $message->get_message();
+        $date = $message->get_date();
+
         $data = array(
-            'message' => 'test'
+            'title' => $title,
+            'message' => $text,
+            'date' => $date
         );
         $this->db->insert('messages', $data);
     }
-
+    //TODO hier nog result in een message classe stoppen?
     private function returnMessageArray($queryResult) {
         $messages = array();
 

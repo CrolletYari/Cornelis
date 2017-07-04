@@ -100,7 +100,7 @@
         <div class="row">
             <div class="col-md-7 ">
                 <div class="media text-left">
-                    <h2>Info</h2>
+                    <h2><?php echo $title ?></h2>
                     <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
                     <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
                     <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
@@ -121,6 +121,14 @@
                         <p>Wij zijn gesloten vanaf maandag 3 juli tot 24 juli 2017 omwille van het bouwverlof.</p>
                     </div>
                 </div>
+                <?php foreach ($messages as $message) {?>
+                    <div class="media text-left">
+                        <div class="media-body">
+                            <h4 class="media-heading"><?php echo $message->title ?> <small><i>Posted on <?php echo $message->date ?></i></small></h4>
+                            <p><?php echo $message->message ?></p>
+                        </div>
+                    </div>
+                <?php };  ?>
             </div>
         </div>
     </section>

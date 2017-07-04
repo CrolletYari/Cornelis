@@ -8,12 +8,17 @@
  */
 class Facade extends CI_Model
 {
-    var $messages;
+    private $messages;
+    private $photos;
 
     function __construct()
     {
+        $this->load->database();
+        $this->load->model('PhotosInDB');
         $this->load->model('MessagesInDB');
+
         $this->messages = new MessagesInDB();
+        $this->photos = new PhotosInDB();
     }
 
     public function getMessages() {
@@ -22,6 +27,14 @@ class Facade extends CI_Model
 
     public function addMessage($message) {
             $this->messages->addMessage($message);
+    }
+
+    public function getPhotos() {
+        return $this->photos->getPhotos();
+    }
+
+    public  function addPhoto($photo) {
+        $this->photos->addPhoto($photo);
     }
 
 }

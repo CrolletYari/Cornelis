@@ -9,14 +9,32 @@
 </head>
 <body>
         <h1>TEST</h1>
+        <?php echo base_url() ?>
 
-        <form action="controller/post" method="POST">
-            <input type="text"><input type="submit">
+
+        <?php echo form_open_multipart('controller/uploadphoto');?>
+
+        <input type="file" name="userfile" size="20" />
+
+        <input type="submit" value="upload" />
+
         </form>
+
+
+        <form action="<?php echo base_url('index.php/controller/postmessage') ?>" method="POST">
+            <input type="text" name="title">
+            <input type="text" name="message"><input type="submit">
+        </form>
+
 
         <h2><?php echo $title; ?></h2>
         <?php foreach ($messages as $message) { ?>
-            <h3><?php echo $message->id ." ". $message->message; ?></h3>
+            <h3><?php echo $message->id ." ". $message->title ." ". $message->message; ?></h3>
+        <?php }; ?>
+
+        <?php foreach ($photos as $photo) { ?>
+            <h3><?php echo $photo->id ." ". $photo->path . " " . $photo->type; ?></h3>
+            <img src="<?php echo base_url('uploads/' . $photo->path);?>" alt="">
         <?php }; ?>
 
 </body>
