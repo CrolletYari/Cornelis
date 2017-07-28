@@ -17,7 +17,7 @@ class Controller extends CI_Controller
 
         $this->load->helper((array('form', 'url','url_helper')));
 
-        $this->load->library('parser');
+        $this->load->library('session');
     }
 
     public function index() {
@@ -80,6 +80,10 @@ class Controller extends CI_Controller
         $this->addphoto($photo);
 
         redirect('/controller', 'refresh');
+    }
+    //TODO
+    private function checklogin() {
+        return $_SESSION['USER'] != null;
     }
 
     private function addphoto($photo) {
